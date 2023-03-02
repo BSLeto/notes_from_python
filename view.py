@@ -5,7 +5,7 @@ def user_interface():
         \n3. Edit notes\
         \n4. Delete notes\
         \n5. Open all notes\
-        \n6. Search notes from dates\
+        \n6. Search notes by dates\
         \n7. Close menu\
         \n Choose number of operations: ')
     
@@ -14,7 +14,7 @@ def new_note():
     return note
 
 def show_note(data):
-    result = 'Тема: '+ data['header'] + '\nСодержание заметки: ' + data['body']
+    result = 'Тема: '+ data['header'] + '\n Содержание заметки: ' + data['body']
     print(result)
     
 def show_error():
@@ -23,8 +23,8 @@ def show_error():
 def id_input():
     return input('Введите номер заметки: ')
 
-def confirmaton():
+def confirmation():
     print('Изменения сохранены! \n')
     
 def get_date():
-    reurn input ('Введите дату, на которыю необходимо вывести заметки:')
+    return input('Введите дату, на которыю необходимо вывести заметки:')
